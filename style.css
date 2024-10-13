@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 60vw;
+    height: 100px;
+    margin: auto;
+}
+
+.main {
+    position: relative;
+    background-image: url(img/background_image.jpg);
+    width: max(1200px, 100vw);
+    height: 80vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.main .box {
+    position: absolute;
+    top: 0;
+    width: max(1200px, 100vw);
+    height: 80vh;
+    background-color: black;
+    opacity: 0.64;
+}
+
+.main .nav img {
+    width: 130px;
+    color: red;
+    position: relative;
+    z-index: 10;
+}
+
+.nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    flex-direction: column;
+    
+    gap: 10x;
+}
+
+.hero .con {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 57px;
+    line-height: 70px;
+}
+
+.hero :nth-child(3) {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.hero:nth-child(4) {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.hero-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+}
+
+.hero-btn input {
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 2px solid rgba(167, 163, 163, 0.5);
+    font-size: 10px;
+    padding: 8px 100px 11px 8px;
+    color: white;
+}
+
+.line-break {
+    height: 7px;
+    background-color: rgb(75, 73, 73);
+
+}
+
+.btn select {
+
+    color: white;
+    padding: 3px 7px;
+    background-color: rgba(244, 235, 235, 0);
+}
+
+.btn select option {
+    background-color: rgb(75, 73, 73);
+    color: white;
+}
+
+.btn {
+    padding: 3px 7px;
+    color: white;
+    background-color: rgba(244, 235, 235, 0);
+    border: 1px solid rgba(231, 230, 227, 0.433);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.select {
+    padding: 0;
+}
+
+.btn-red {
+    background-color: red;
+    border: 2px;
+    text-align: center;
+
+}
+
+.btn-red-cm {
+    background-color: red;
+    border: 5px;
+    padding: 5px 12px;
+    font-size: 20px;
+    border-radius: 3px;
+}
+
+/* section first */
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    color: white;
+    margin: auto;
+    align-items: center;
+    
+    margin-top: 23px;
+    /* align-items: center; */
+}
+
+.secimg {
+    position: relative;
+
+}
+
+.secimg img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+
+.secimg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+
+}
+
+.first>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.first>div :first-child {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.first>div :nth-child(2) {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.faq {
+    color: white;
+    background: black;
+    padding: 34px;
+
+}
+
+.faq h2 {
+    font-size: 48px;
+    text-align: center;
+}
+
+.faqbox svg{
+    filter:invert(1);
+}
+
+.faqbox:hover {
+    background-color: #414141;
+    color: white;
+}
+
+.faqbox {
+    transition: all 2 ease-out;
+    display: flex;
+    justify-content: space-between;
+    max-width: 60vw;
+    align-items: center;
+    margin: 23px auto;
+    background-color: #2d2d2d;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 3px 12px;
+}
+
+footer{
+    color:white;
+    margin:auto;
+    width:60vw;
+
+}
+footer div{
+    padding:25px 0;
+}
+.footer{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+   
+}
+.footer-items{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    align-items: center;
+    justify-content: center;
+}
+.footer-items a{
+    text-decoration: none;
+    color:white;
+    font-size:14px;
+
+}
+@media only screen and (max-width:600px) {
+    .footer{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+       
+    }
+    .main .box {
+        width:100vw;
+    }
+  
+
+    .select{
+        font-size:14px;
+    }
+    .first{
+        flex-wrap: wrap;
+    }
+    .main{
+        width:100vw;
+    }
+    .main .nav{
+        width:430px;
+    }
+    .main .nav img {
+        width: 40px;
+        
+    }
+    .btn-red{
+        font-size:13px;
+        padding:5px 7px 5px 7px;
+    }
+    
+}
